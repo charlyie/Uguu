@@ -36,7 +36,7 @@
 body {
   background-attachment: fixed, fixed;
   background-color: #F7F7F7;
-  background-image: url('grill.php'), url('img/bg.png');
+  background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
   background-position: 85% 100%, top left;
   background-repeat: no-repeat, repeat;
   color: #333;
@@ -47,10 +47,18 @@ body {
   margin: 0;
   padding-top: 20px;
   padding-bottom: 40px;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
 }
 .container {
+  background: #fcf8e34a;
+  box-sizing: border-box;
+  backdrop-filter: blur(6px);
   margin: 0 auto;
   max-width: 700px;
+  padding: 20px;
 }
 
 /**
@@ -105,7 +113,7 @@ a:focus {
   transition: font-size 0.5s;
 }
 .jumbotron .btn {
-  background: rgba(202, 230, 190, 0.75);
+  background: rgba(202, 230, 190, 0.25);
   border: 1px solid #B7D1A0;
   border-radius: 4px;
   color: #468847;
@@ -142,7 +150,7 @@ a:focus {
   color: #AA4342;
 }
 .alert-info {
-  background-color: #D9EDF7;
+  background-color: #d9edf769;
   border-color: #BCE8F1;
   color: #167196;
 }

@@ -72,7 +72,7 @@ define('ID_CHARSET', 'abcdef0123456789');
 //$FILTER_MIME = array("application/octet-stream", "application/msword", "text/html", "application/x-dosexec", "application/zip", "application/java", "application/java-archive", "application/pdf", "application/x-executable");
 //$FILTER_EXT = array("exe", "scr", "com", "vbs", "bat", "cmd", "htm", "html", "zip", "jar", "msi", "apk", "pdf");
 
-define('CONFIG_BLOCKED_EXTENSIONS', serialize(['exe', 'scr', 'com', 'vbs', 'bat', 'cmd', 'htm', 'html', 'jar', 'msi', 'apk', 'phtml']));
+define('CONFIG_BLOCKED_EXTENSIONS', serialize(['exe', 'scr', 'com', 'vbs', 'bat', 'cmd', 'htm', 'html', 'jar', 'msi', 'apk', 'phtml', 'php', 'php4', 'php5', 'sh']));
 define('CONFIG_BLOCKED_MIME', serialize(['application/msword', 'text/html', 'application/x-dosexec', 'application/java', 'application/java-archive', 'application/x-executable', 'application/x-mach-binary']));
 
 /**
