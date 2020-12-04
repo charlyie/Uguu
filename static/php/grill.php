@@ -1,6 +1,7 @@
 <?php
 
 // Array of image paths, feel free to add/remove to/from this list
+/*
 $images = array(
     'img/2.png',
     'img/3.png',
@@ -22,3 +23,4 @@ $images = array(
 if (headers_sent() === false) {
     header('Location: '.$images[array_rand($images)], true, 303);
 }
+*/

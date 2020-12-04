@@ -49,7 +49,7 @@ define('UGUU_FILES_RETRIES', 15);
  * @param int POMF_FILES_LENGTH Number of random alphabetical ASCII characters
  * to use
  */
-define('UGUU_FILES_LENGTH', 8);
+define('UGUU_FILES_LENGTH', 32);
 
 /*
  * URI to prepend to links for uploaded files
@@ -63,7 +63,7 @@ define('UGUU_URL', 'https://a.uguu.se/');
  *
  * @param string characters to be used in generateName()
  */
-define('ID_CHARSET', 'abcdefghijklmnopqrstuvwxyzABCDEFGHJKLMNOPQRSTUVWXYZ');
+define('ID_CHARSET', 'abcdef0123456789');
 
 /*
  * Filtered mime types
@@ -95,6 +95,7 @@ $doubledots = array_map('strrev', [
     'tar.gz',
     'tar.bz',
     'tar.bz2',
+    'sql.gz',
     'tar.xz',
     'user.js',
 ]);
