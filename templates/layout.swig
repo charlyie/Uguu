@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="generator" content="Uguu {{pkgVersion}}">
 		<meta name="Description" content="{{SiteMetaInfo}}">
-		<title>{{siteName}} &middot; {% block title %}Kawaii Temporary File Hosting{% endblock %}</title>
+		<title>{{siteName}} &middot; {% block title %}Temporary File Hosting</title>
 		<link rel="icon" href="favicon.ico">
 		<link rel="stylesheet" href="uguu.min.css">
 		<script src="uguu.min.js"></script>
