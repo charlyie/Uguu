@@ -36,9 +36,9 @@
 body {
   background-attachment: fixed, fixed;
   background-color: #F7F7F7;
-  background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
-  background-position: 85% 100%, top left;
-  background-repeat: no-repeat, repeat;
+  background-image: linear-gradient(to right top, #d16ba5b5, #c777b9b5, #ba83cab5, #aa8fd8b5, #9a9ae1b5, #8aa7ecb5, #79b3f4b5, #69bff8b5, #52cffeb5, #41dfffb5, #46eefab5, #5ffbf1b5), url('grill.php');
+  background-repeat: no-repeat;
+  background-position: cover;
   color: #333;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;

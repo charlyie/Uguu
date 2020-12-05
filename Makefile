@@ -23,7 +23,7 @@ htmlmin:
 	$(NODE) node_modules/htmlmin/bin/htmlmin $(CURDIR)/build/tools.html -o $(CURDIR)/build/tools.html 
 
 installdirs:
-	mkdir -p $(DESTDIR)/ $(DESTDIR)/img
+	mkdir -p $(DESTDIR)/ $(DESTDIR)/img/backgrounds
 ifneq (,$(findstring php,$(MODULES)))
 	mkdir -p $(DESTDIR)/classes $(DESTDIR)/includes
 endif
@@ -42,6 +42,7 @@ min-js:
 
 copy-img:
 	cp -v $(CURDIR)/static/img/*.png $(CURDIR)/build/img/
+	cp -v $(CURDIR)/static/img/backgrounds/*.jpg $(CURDIR)/build/img/backgrounds/
 	cp -v $(CURDIR)/static/img/favicon.ico $(CURDIR)/build/favicon.ico
 
 copy-php:
@@ -79,7 +80,7 @@ npm_dependencies:
 	$(NPM) install
 
 builddirs:
-	mkdir -p $(CURDIR)/build $(CURDIR)/build/img 
+	mkdir -p $(CURDIR)/build $(CURDIR)/build/img/backgrounds
 ifneq (,$(findstring php,$(MODULES)))
 	mkdir -p $(CURDIR)/build/classes $(CURDIR)/build/includes
 endif
