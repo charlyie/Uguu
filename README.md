@@ -1,7 +1,16 @@
-# Uguu
+# Uguu *Improved*
 
-This version is a custom & simplified version of [Uguu](https://github.com/nokonoko/Uguu).
+This version is a custom, enhanced & UI-simplified version of [Uguu](https://github.com/nokonoko/Uguu).
 Uguu is a simple lightweight temporary file uploading and sharing platform where files get deleted after X amount of time.
+
+![Uguu Improved Screenshot](https://i.ibb.co/gV7p6Y1/uguu-screenshot.jpg)
+
+## What's improved ?
+
+- UI simplified
+- Install scripts
+- Minor bug fixes
+- Link to [Uguu Bash Client](https://github.com/charlyie/uguu-client)
 
 ## Features
 
@@ -18,12 +27,13 @@ Uguu is a simple lightweight temporary file uploading and sharing platform where
 
 ## Requirements
 
-Original development environment is Nginx + PHP5.3 + SQLite, but is confirmed to
-work with Apache 2.4 and newer PHP versions like PHP7.3.
+- Apache/Nginx
+- PHP 7+
+- SQLite enabled
 
 ## Install
 
-For the purposes of this guide, we won't cover setting up Nginx, PHP, SQLite,
+For the purposes of this guide, we won't cover setting up Apache/Nginx, PHP, SQLite,
 Node, or NPM. So we'll just assume you already have them all running well.
 
 **NPM/Node is only needed to compile the files, Uguu runs on PHP.**
@@ -117,6 +127,8 @@ curl -i -F files[]=@yourfile.jpeg https://uguu.se/upload.php?output=html (HTML R
 ## Credits
 
 Uguu is based on [Pomf](http://github.com/pomf/pomf).
+
+Uguu improved by [Charles Bourgeaux](https://github.com/charlyie)
 
 ## License
 
