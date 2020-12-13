@@ -99,9 +99,11 @@ document.addEventListener('DOMContentLoaded', function() {
       if (response.success) {
         link.textContent = response.files[0].url.replace(/.*?:\/\//g, '');
         link.href = response.files[0].url;
+        link.target = "_blank";
         url.appendChild(link);
         var copy = document.createElement('button');
         copy.className = 'upload-clipboard-btn';
+        copy.title="Copy URL to clipboard";
         var glyph = document.createElement('img');
         glyph.src = 'img/glyphicons-512-copy.png';
         copy.appendChild(glyph);
