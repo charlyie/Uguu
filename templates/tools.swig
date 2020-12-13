@@ -15,12 +15,8 @@
 <section>
 	<h2>ShareX</h2>
 	<dl>
-		<dt>Download</dt>
-		<dd><a href="https://getsharex.com">https://getsharex.com</a></dd>
-		<dt>Source</dt>
-		<dd><a href="https://github.com/ShareX/ShareX">https://github.com/ShareX/ShareX</a></dd>
-		<dt>Contact</dt>
-		<dd><a href="https://webchat.freenode.net/?channels=%23ShareX">#ShareX on irc.freenode.net</a></dd>
+		<dt>Download Uguu Client (Bash)</dt>
+		<dd><a href="https://github.com/charlyie/uguu-client" target="_blank">https://github.com/charlyie/uguu-client</a></dd>
 	</dl>
 </section>
 {% include "nav.swig" %}
