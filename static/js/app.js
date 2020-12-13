@@ -187,7 +187,7 @@ document.addEventListener('DOMContentLoaded', function() {
   function handleDrag(state, element, evt) {
     stopDefaultEvent(evt);
     if (state.dragCount == 1) {
-      element.textContent = 'Drop it here~';
+      element.textContent = 'Drop your files here';
     }
     state.dragCount += 1;
   }
