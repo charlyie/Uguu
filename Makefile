@@ -10,7 +10,7 @@ TMPDIR := $(shell mktemp -d)
 # default modules
 MODULES="php"
 
-all: builddirs npm_dependencies swig htmlmin min-css min-js copy-img submodules
+all: builddirs npm_dependencies swig htmlmin min-css min-js copy-img copy-htaccess submodules
 	
 swig:
 	$(NODE) node_modules/swig/bin/swig.js render -j dist.json templates/faq.swig > $(CURDIR)/build/faq.html 
@@ -48,6 +48,9 @@ copy-img:
 	cp -v $(CURDIR)/static/img/backgrounds/*.jpg $(CURDIR)/build/img/backgrounds/
 	cp -v $(CURDIR)/static/img/favicon.ico $(CURDIR)/build/favicon.ico
 
+copy-htaccess:
+	cp -v $(CURDIR)/static/.htaccess $(CURDIR)/build/
+
 copy-php:
 ifneq ($(wildcard $(CURDIR)/static/php/.),)
 	cp -rv $(CURDIR)/static/php/* $(CURDIR)/build/
@@ -64,6 +67,7 @@ endif
 
 install: installdirs
 	cp -rv $(CURDIR)/build/* $(DESTDIR)/
+	cp -rv $(CURDIR)/build/.htaccess $(DESTDIR)/
 
 dist:
 	DESTDIR=$(TMPDIR)/uguu-$(PKGVERSION)
