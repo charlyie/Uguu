@@ -105,6 +105,9 @@ a:focus {
   cursor: default;
   text-rendering: optimizelegibility;
 }
+.jumbotron h1.medium {
+  font-size: 42px;
+}
 .jumbotron .lead {
   font-size: 21px;
   font-weight: 200;
@@ -158,6 +161,16 @@ a:focus {
   background-color: #d9edf769;
   border-color: #BCE8F1;
   color: #167196;
+}
+
+/**
+ * SPECIFIC PAGES
+ */
+.page--notfound {
+  text-align: center;
+}
+.page--notfound .jumbotron img{
+  max-width: 40%;
 }
 
 /**

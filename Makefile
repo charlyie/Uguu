@@ -16,11 +16,13 @@ swig:
 	$(NODE) node_modules/swig/bin/swig.js render -j dist.json templates/faq.swig > $(CURDIR)/build/faq.html 
 	$(NODE) node_modules/swig/bin/swig.js render -j dist.json templates/index.swig > $(CURDIR)/build/index.html 
 	$(NODE) node_modules/swig/bin/swig.js render -j dist.json templates/tools.swig > $(CURDIR)/build/tools.html 
+	$(NODE) node_modules/swig/bin/swig.js render -j dist.json templates/notfound.swig > $(CURDIR)/build/notfound.html 
 
 htmlmin:
 	$(NODE) node_modules/htmlmin/bin/htmlmin $(CURDIR)/build/index.html -o $(CURDIR)/build/index.html 
 	$(NODE) node_modules/htmlmin/bin/htmlmin $(CURDIR)/build/faq.html -o $(CURDIR)/build/faq.html 
 	$(NODE) node_modules/htmlmin/bin/htmlmin $(CURDIR)/build/tools.html -o $(CURDIR)/build/tools.html 
+	$(NODE) node_modules/htmlmin/bin/htmlmin $(CURDIR)/build/notfound.html -o $(CURDIR)/build/notfound.html 
 
 installdirs:
 	mkdir -p $(DESTDIR)/ $(DESTDIR)/img/backgrounds
@@ -41,6 +43,7 @@ min-js:
 	echo "// @license-end" >> $(CURDIR)/build/uguu.min.js
 
 copy-img:
+	cp -v $(CURDIR)/static/img/*.svg $(CURDIR)/build/img/
 	cp -v $(CURDIR)/static/img/*.png $(CURDIR)/build/img/
 	cp -v $(CURDIR)/static/img/backgrounds/*.jpg $(CURDIR)/build/img/backgrounds/
 	cp -v $(CURDIR)/static/img/favicon.ico $(CURDIR)/build/favicon.ico
